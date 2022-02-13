@@ -3,6 +3,7 @@ import cors from "cors";
 import morgan from "morgan";
 import userRouter from "./config/user.routes";
 import { createConnection } from "typeorm";
+import "reflect-metadata";
 
 const app = express();
 createConnection();
